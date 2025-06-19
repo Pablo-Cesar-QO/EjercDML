@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formulario de Registro"
+            android:textSize="24sp"
+            android:textColor="@color/purple_200"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/tvFileStreamTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_200"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:textColor="@color/purple_200"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su nombre"
+            android:textColor="@color/purple_200"
+            android:textColorHint="@color/purple_200"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edad:"
+            android:textColor="@color/purple_200"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su edad"
+            android:inputType="number"
+            android:textColor="@color/purple_200"
+            android:textColorHint="@color/purple_200"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado civil:"
+            android:textColor="@color/purple_200"
+            android:layout_marginBottom="8dp"/>
+        <RadioGroup
+            android:id="@+id/rgEstadoCivil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbSoltero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soltero"
+                android:textColor="@color/purple_200"
+                android:layout_marginRight="16dp"/>
+
+            <RadioButton
+                android:id="@+id/rbCasado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casado"
+                android:checked="true"
+                android:textColor="@color/purple_200"
+                android:layout_marginRight="16dp"/>
+
+            <RadioButton
+                android:id="@+id/rbDivorciado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Divorciado"
+                android:textColor="@color/purple_200"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Género:"
+            android:textColor="@color/purple_200"
+            android:layout_marginBottom="8dp"/>
+        <Spinner
+            android:id="@+id/spGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_200"
+            android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/cbTrabaja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actualmente trabaja"
+            android:textColor="@color/purple_200"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/cbEstudiante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actualmente estudiante"
+            android:textColor="@color/purple_200"
+            android:layout_marginBottom="16dp"/>
+
+        <Switch
+            android:id="@+id/swNotificaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recibir notificaciones"
+            android:textColor="@color/purple_200"
+            android:layout_marginBottom="16dp"/>
+
+        <ToggleButton
+            android:id="@+id/tbVip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOff="Usuario normal"
+            android:textOn="Usuario VIP"
+            android:textColor="@color/purple_200"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nivel de satisfacción:"
+            android:textColor="@color/purple_200"
+            android:layout_marginBottom="8dp"/>
+        <SeekBar
+            android:id="@+id/sbSatisfaccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:id="@+id/tvSatisfaccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="@color/purple_200"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha de registro:"
+            android:textColor="@color/purple_200"
+            android:layout_marginBottom="8dp"/>
+        <DatePicker
+            android:id="@+id/dpFechaRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora de registro:"
+            android:textColor="@color/purple_200"
+            android:layout_marginBottom="8dp"/>
+        <TimePicker
+            android:id="@+id/tpHoraRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnInsertar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Datos"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/btnMostrarDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mostrar Datos Guardados"
+            android:backgroundTint="@color/purple_200"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+</ScrollView>
