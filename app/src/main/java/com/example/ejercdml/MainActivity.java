@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
         File file = new File(getFilesDir(), FILE_NAME);
         return file.exists() && file.length() > 0;
     }
-
+//SOLO VOY A COMENTAR PARA EL EJERCICIO :)
     private void limpiarCampos() {
         etNombre.setText("");
         etEdad.setText("");
